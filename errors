@@ -1,0 +1,13 @@
+#7 [2/6] RUN yum update -y &&     yum install -y epel-release &&     yum install -y     curl     git     iputils     ca-certificates     jq     software-properties-common     redhat-lsb-core     libicu     yum clean all
+#7 0.725 Not root, Subscription Management repositories not updated
+#7 0.746 Error: This command has to be run with superuser privileges (under the root user on most systems).
+#7 ERROR: executor failed running [/bin/sh -c yum update -y &&     yum install -y epel-release &&     yum install -y     curl     git     iputils     ca-certificates     jq     software-properties-common     redhat-lsb-core     libicu     yum clean all]: exit code: 1
+------
+ > [2/6] RUN yum update -y &&     yum install -y epel-release &&     yum install -y     curl     git     iputils     ca-certificates     jq     software-properties-common     redhat-lsb-core     libicu     yum clean all:
+0.725 Not root, Subscription Management repositories not updated
+0.746 Error: This command has to be run with superuser privileges (under the root user on most systems).
+------
+ERROR: failed to solve: executor failed running [/bin/sh -c yum update -y &&     yum install -y epel-release &&     yum install -y     curl     git     iputils     ca-certificates     jq     software-properties-common     redhat-lsb-core     libicu     yum clean all]: exit code: 1
+The push refers to repository [acrmy01seanshared01.azurecr.io/eip/wm/wm-msr-abe-az-agent]
+An image does not exist locally with the tag: acrmy01seanshared01.azurecr.io/eip/wm/wm-msr-abe-az-agent
+##[error]Bash exited with code '1'
